@@ -21,3 +21,5 @@ export const Title = React.memo(
     );
   }
 );
+
+Title.displayName = "Title";

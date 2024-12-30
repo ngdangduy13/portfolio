@@ -5,6 +5,7 @@ import "./globals.css";
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "700"],
   variable: "--font-ibm-plex-mono",
+  subsets: ["latin"],
 });
 
 const jetbrainsMono = JetBrains_Mono({

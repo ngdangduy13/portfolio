@@ -2,7 +2,6 @@ import { Dot } from "@/components/Dot";
 import { Link } from "@/components/Link";
 import { Tag } from "@/components/Tag";
 import { Title } from "@/components/Title";
-import { link } from "fs";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineLink } from "react-icons/hi";
@@ -82,7 +81,7 @@ export default function Home() {
           <div className="flex-1">
             <div>
               <Title>hello world,</Title>
-              <Title>I'm Duy Nguyen,</Title>
+              <Title>I&apos;m Duy Nguyen,</Title>
               <Title>a full-stack developer</Title>
             </div>
 

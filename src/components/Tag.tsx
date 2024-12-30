@@ -7,3 +7,5 @@ export const Tag = React.memo((props: React.PropsWithChildren) => {
     </div>
   );
 });
+
+Tag.displayName = "Tag";

@@ -17,3 +17,5 @@ export const Link = React.memo(({ children, ...props }: React.PropsWithChildren<
     </a>
   );
 });
+
+Link.displayName = "Link";
