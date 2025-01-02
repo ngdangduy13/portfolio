@@ -83,7 +83,7 @@ export default function Home() {
             <div className="flex-1">
               <div>
                 <Title>hello world,</Title>
-                <Title>I&apos;m Duy Nguyen,</Title>
+                <Title>I&apos;m Dang Duy Nguyen,</Title>
                 <Title>a full-stack developer</Title>
               </div>
 
