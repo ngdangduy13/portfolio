@@ -15,8 +15,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Duy Nguyen",
-  description: "Duy Nguyen's personal portfolio",
+  title: "Dang Duy Nguyen",
+  description: "Dang Duy Nguyen's personal portfolio",
 };
 
 export const viewport: Viewport = {
