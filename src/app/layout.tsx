@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import LightAtCursor from "@/components/LightAtCursor";
 
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "700"],
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   initialScale: 1,
   width: "device-width",
-  themeColor: '#0d0c0c'
+  themeColor: "#0d0c0c",
 };
 
 export default function RootLayout({
@@ -32,8 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexMono.variable} ${jetbrainsMono.variable} antialiased flex flex-col`}
+        className={`${ibmPlexMono.variable} ${jetbrainsMono.variable} antialiased flex flex-col relative`}
       >
+        <LightAtCursor />
         {children}
       </body>
     </html>
