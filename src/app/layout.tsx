@@ -1,7 +1,7 @@
+import { CursorLightEffect } from "@/components/CursorLightEffect";
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import LightAtCursor from "@/components/LightAtCursor";
 
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "700"],
@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${ibmPlexMono.variable} ${jetbrainsMono.variable} antialiased flex flex-col relative`}
       >
-        <LightAtCursor />
+        <CursorLightEffect />
         {children}
       </body>
     </html>

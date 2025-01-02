@@ -1,5 +1,4 @@
 import { Dot } from "@/components/Dot";
-import LightAtCursor from "@/components/LightAtCursor";
 import { Link } from "@/components/Link";
 import { Tag } from "@/components/Tag";
 import { Title } from "@/components/Title";

@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-const CursorLightEffect = () => {
+export const CursorLightEffect = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e: any) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setCursorPosition({ x: e.pageX, y: e.pageY });
     };
 
@@ -27,4 +27,4 @@ const CursorLightEffect = () => {
   );
 };
 
-export default CursorLightEffect;
+CursorLightEffect.displayName = "CursorLightEffect";
