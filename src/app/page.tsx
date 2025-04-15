@@ -10,15 +10,28 @@ import { MdOutlineMail } from "react-icons/md";
 const experiences = [
   {
     period: "2019-2024",
-    position: "senior full-stack developer at bePOS HQ",
+    position: "senior software engineer at bePOS HQ",
     description:
       "develop and maintain essential components while collaborating closely with cross-functional teams, including developers, designers, and product owners, to implement and deliver solutions that adhere to best practices in web accessibility.",
+    points: [
+      "Built and deployed high-quality websites, mobile apps, and design systems for diverse clients using ReactJS, NextJS, React Native, and more.",
+      "Defined architecture and coding conventions for front-end projects, including linter, code format, and build scripts",
+      "Implemented CI/CD pipelines, improving deployment efficiency by 30%.",
+      "Collaborated with team members to design database schemas, system architecture, and develop backend services.",
+      "Responsible for deploying and monitoring services in Firebase and AWS.",
+      "Work alongside product & project managers, designers, and other engineers to transform creative concepts into refined digital experiences at an agile (2-week) cadence.",
+      "Review code & mentor other junior members of the team to ensure product quality.",
+    ],
   },
   {
     period: "2018-2029",
-    position: "junior front-end developer at MindX Software",
+    position: "junior software engineer at MindX Software",
     description:
       "collaborated with developers and designers to deliver websites and mobile applications for diverse clients, ensuring high-quality solutions that meet specific business needs.",
+    points: [
+      "Developed, maintained, and shipped production code for over 5+ client websites primarily using ReactJS and NextJS.",
+      "Performed quality assurance tests on various sites to ensure cross-browser compatibility and mobile responsiveness.",
+    ],
   },
 ];
 
@@ -141,11 +154,17 @@ export default function Home() {
                     <span>{experience.period}</span>
                   </div>
 
-                  <div className="p-2 flex-1 bg-[rgba(189,176,78,0.2)] cursor-pointer">
-                    <div className="font-semibold text-white transition-all hover:underline hover:text-primary-500">
+                  <div className="p-2 flex-1 bg-[rgba(189,176,78,0.2)] cursor-pointer text-sm">
+                    <div className="font-bold text-lg text-white transition-all hover:underline hover:text-primary-500">
                       {experience.position}
                     </div>
-                    <div className="text-sm mt-2 text-neutral-200">{experience.description}</div>
+                    <div className="mt-2">
+                      {experience.points.map((item, i) => (
+                        <li key={`experience-${index}-${i}`} className="text-neutral-200">
+                          {item.toLowerCase()}
+                        </li>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
