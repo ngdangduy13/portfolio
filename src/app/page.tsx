@@ -96,7 +96,7 @@ export default function Home() {
               <div>
                 <Title>hello world,</Title>
                 <Title>I&apos;m Dang Duy Nguyen,</Title>
-                <Title>a full-stack developer</Title>
+                <Title>a software engineer</Title>
               </div>
 
               <div className="mt-4 text-neutral-200 text-sm">
