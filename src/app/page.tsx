@@ -14,13 +14,13 @@ const experiences = [
     description:
       "develop and maintain essential components while collaborating closely with cross-functional teams, including developers, designers, and product owners, to implement and deliver solutions that adhere to best practices in web accessibility.",
     points: [
-      "Built and deployed high-quality websites, mobile apps, and design systems for diverse clients using ReactJS, NextJS, React Native, and more.",
-      "Defined architecture and coding conventions for front-end projects, including linter, code format, and build scripts",
-      "Implemented CI/CD pipelines, improving deployment efficiency by 30%.",
-      "Collaborated with team members to design database schemas, system architecture, and develop backend services.",
-      "Responsible for deploying and monitoring services in Firebase and AWS.",
-      "Work alongside product & project managers, designers, and other engineers to transform creative concepts into refined digital experiences at an agile (2-week) cadence.",
-      "Review code & mentor other junior members of the team to ensure product quality.",
+      "Modelled data in PostgreSQL & Firestore and designed system architecture on AWS & Firebase.",
+      "Implemented a near-real-time sync pipeline that streams data from Firestore to a normalized PostgreSQL warehouse, unlocking fast SQL reporting and company-wide analytics dashboards.",
+      "Developed serverless backend services for analytics dashboards with Google Cloud Functions, providing auto-scaling APIs that power real-time reporting for customers.",
+      "Built GitHub Actions to deploy app to AWS, shrinking release cycle from 1 day to <4 hours.",
+      "Worked alongside product & project managers, designers, and other engineers to transform creative concepts into refined digital experiences at an agile (2-week) cadence.",
+      "Mentored 2 junior devs; weekly code clinics lifted team velocity 20%.",
+      "Built and deployed high-quality websites and mobile apps using ReactJS/NextJS & React Native, serving 10 K+ monthly users.",
     ],
   },
   {
@@ -29,9 +29,25 @@ const experiences = [
     description:
       "collaborated with developers and designers to deliver websites and mobile applications for diverse clients, ensuring high-quality solutions that meet specific business needs.",
     points: [
-      "Developed, maintained, and shipped production code for over 5+ client websites primarily using ReactJS and NextJS.",
-      "Performed quality assurance tests on various sites to ensure cross-browser compatibility and mobile responsiveness.",
+      "Delivered production code for more than 5 client sites in ReactJS/NextJS, achieving Lighthouse score ≥90 for performance & accessibility.",
+      "Executed cross‑browser/device QA ensuring flawless UX on Chrome, Safari, Firefox & iOS/Android.",
     ],
+  },
+];
+
+const education = [
+  {
+    period: "2024 - Current",
+    name: "University of Technology Sydney (UTS)",
+    description:
+      "Master of Artificial Intelligence, University of Technology Sydney, Expected 2026.",
+    website: "https://www.uts.edu.au/",
+  },
+  {
+    period: "2015 - 2019",
+    name: "University of Greenwich Vietnam",
+    description: "Earned a Bachelor of Science in Computer Software Engineering.",
+    website: "https://greenwich.edu.vn/",
   },
 ];
 
@@ -100,7 +116,8 @@ export default function Home() {
               </div>
 
               <div className="mt-4 text-neutral-200 text-sm">
-                I build accessible, pixel-perfect digital experiences for the web.
+                just a wizard turning caffeine and TypeScript into whatever digital magic you
+                desire—no rabbits, just reliable releases.
               </div>
 
               <div className="mt-4 grid gap-2">
@@ -203,6 +220,64 @@ export default function Home() {
                   </div>
                 </a>
               ))}
+            </div>
+          </div>
+
+          {/* Education */}
+          <div>
+            <Title>education</Title>
+            <div className="grid gap-4 md:mt-4">
+              {education.map((item, index) => (
+                <div
+                  key={`education-${index}`}
+                  className="flex items-start md:gap-4 flex-col md:flex-row"
+                >
+                  <div className="flex gap-2 items-center py-2 w-[160px]">
+                    <Dot />
+                    <span>{item.period}</span>
+                  </div>
+
+                  <a
+                    className="p-2 flex-1 bg-[rgba(189,176,78,0.2)] cursor-pointer text-sm"
+                    href={item.website}
+                    target="_blank"
+                  >
+                    <div className="flex items-center gap-2 font-bold text-lg text-white transition-all hover:underline hover:text-primary-500">
+                      {item.name}
+                      <HiOutlineLink />
+                    </div>
+                    <div className="mt-2">{item.description}</div>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <Title>achievements</Title>
+
+            <div className="flex items-start md:gap-4 flex-col md:flex-row mt-4">
+              <div className="flex gap-2 items-center py-2 w-[160px]">
+                <Dot />
+                <span>2018</span>
+              </div>
+
+              <a
+                className="p-2 flex-1 bg-[rgba(189,176,78,0.2)] cursor-pointer text-sm"
+                href={
+                  "https://devpost.com/software/finpig_final?_gl=1*c7zopr*_gcl_au*MTk5MDEwNzM3Ni4xNzQ1NDc2Mzc2*_ga*MTg0NDQ1MDkxNC4xNzQ1NDc2Mzc2*_ga_0YHJK3Y10M*MTc0NTQ3NjM3Ni4xLjEuMTc0NTQ3NjQxMi4wLjAuMA.."
+                }
+                target="_blank"
+              >
+                <div className="flex items-center gap-2 font-bold text-lg text-white transition-all hover:underline hover:text-primary-500">
+                  JunctionX Hanoi Hackathon 2018
+                  <HiOutlineLink />
+                </div>
+                <div className="mt-2">
+                  1st Place (FinTech track) - JunctionX Hanoi Hackathon 2018; built real‑time
+                  expense‑splitting app in 48h
+                </div>
+              </a>
             </div>
           </div>
         </main>
