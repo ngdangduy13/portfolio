@@ -84,8 +84,8 @@ const projects = [
 const externalInfo = [
   {
     icon: MdOutlineMail,
-    link: "mailto:ngdangduy2009@gmail.com",
-    title: "ngdangduy2009@gmail.com",
+    link: "mailto:dangduy.nguyen1211@gmail.com",
+    title: "dangduy.nguyen1211@gmail.com",
   },
   {
     icon: FaGithub,
