@@ -15,7 +15,7 @@ const experiences = [
       "develop and maintain essential components while collaborating closely with cross-functional teams, including developers, designers, and product owners, to implement and deliver solutions that adhere to best practices in web accessibility.",
     points: [
       "Modelled data in PostgreSQL & Firestore and designed system architecture on AWS & Firebase.",
-      "Implemented a near-real-time sync pipeline that streams data from Firestore to a normalized PostgreSQL warehouse, unlocking fast SQL reporting and company-wide analytics dashboards.",
+      "Built a serverless Firestore → PostgreSQL CDC pipeline (≈50 K docs/hr, <2 min lag) that enabled self-serve SQL reporting and company-wide analytics dashboards.",
       "Developed serverless backend services for analytics dashboards with Google Cloud Functions, providing auto-scaling APIs that power real-time reporting for customers.",
       "Built GitHub Actions to deploy app to AWS, shrinking release cycle from 1 day to <4 hours.",
       "Worked alongside product & project managers, designers, and other engineers to transform creative concepts into refined digital experiences at an agile (2-week) cadence.",
