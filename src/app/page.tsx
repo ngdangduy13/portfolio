@@ -37,10 +37,10 @@ const experiences = [
 
 const education = [
   {
-    period: "2024 - Current",
+    period: "2024 - 2026",
     name: "University of Technology Sydney (UTS)",
     description:
-      "Master of Artificial Intelligence, University of Technology Sydney, Expected 2026.",
+      "Master of Artificial Intelligence, University of Technology Sydney, Graduated in Jun 2026.",
     website: "https://www.uts.edu.au/",
   },
   {
